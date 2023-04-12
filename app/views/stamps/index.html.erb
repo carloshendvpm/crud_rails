@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Stamps</h1>
+
+<div id="stamps">
+  <% @stamps.each do |stamp| %>
+    <%= render stamp %>
+    <p>
+      <%= link_to "Show this stamp", stamp %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New stamp", new_stamp_path %>

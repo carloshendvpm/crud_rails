@@ -1,0 +1,32 @@
+<%= form_with(model: stamp) do |form| %>
+  <% if stamp.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(stamp.errors.count, "error") %> prohibited this stamp from being saved:</h2>
+
+      <ul>
+        <% stamp.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.label :value, style: "display: block" %>
+    <%= form.text_field :value %>
+  </div>
+
+  <div>
+    <%= form.label :user_id %>
+    <%= form.collection_select :user_id, User.all, :id, :name %>
+  </div>
+  
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

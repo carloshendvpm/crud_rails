@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @stamp %>
+
+<div>
+  <%= link_to "Edit this stamp", edit_stamp_path(@stamp) %> |
+  <%= link_to "Back to stamps", stamps_path %>
+
+  <%= button_to "Destroy this stamp", @stamp, method: :delete %>
+</div>
