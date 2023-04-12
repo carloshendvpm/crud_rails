@@ -1,24 +1,32 @@
-# README
+# Desafio Carimbo - Real Seguro Viagem CRUD
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Introduction
+This is a simple CRUD application built with Ruby on Rails that was developed for the Real Seguro Viagem company. The purpose of this application is to manage User and Stamp records, allowing the user to create, read, update, and delete records from a user-friendly interface.
 
-Things you may want to cover:
+## Getting Started
+To get started with this application, you will need to have Ruby 3.1.3 and Rails 7.0.4 installed on your machine. Once you have Ruby and Rails installed, you can clone this repository and run the following commands:
+```
+bundle install
+rails db:migrate
+rails s
+```
+After running these commands, you should be able to access the application at http://localhost:3000.
 
-* Ruby version
+## Features
+This application has the following features:
 
-* System dependencies
+* User Management: Users can be created, updated, and deleted from the application. Each user has a name and email.
+* Stamp Management: Stamps can be created, updated, and deleted from the application. Each stamp has a description, value and belongs to a user.
 
-* Configuration
+## Testing 
+This application uses RSpec for testing. To run the tests, you can run the following command:
+```
+bundle exec rspec
+or
+rspec
+```
+This will run all the tests in the spec directory.
 
-* Database creation
+## Continuous Integration
+This application uses GitHub Workflows to automatically run tests on every pull request and push to the master branch. If any tests fail, the build will fail and the developer will be notified.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
