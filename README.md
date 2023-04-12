@@ -1,7 +1,7 @@
 # Desafio Carimbo - Real Seguro Viagem CRUD
 
 ## Introduction
-This is a simple CRUD application built with Ruby on Rails that was developed for the Real Seguro Viagem company. The purpose of this application is to manage User and Stamp records, allowing the user to create, read, update, and delete records from a user-friendly interface.
+This is a simple CRUD application built with Ruby on Rails that was developed for the Real Seguro Viagem company. The purpose of this application is to manage User and Stamp records, allowing the user to create, read, update, and delete records from a simple interface.
 
 ## Getting Started
 To get started with this application, you will need to have Ruby 3.1.3 and Rails 7.0.4 installed on your machine. Once you have Ruby and Rails installed, you can clone this repository and run the following commands:
